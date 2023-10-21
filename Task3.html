@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="booststrap/css/bootstrap.min.css">
+    <script src="booststrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+}
+.wrapper{
+    width: 100%;
+    height: 750px;  
+}
+.wrapper .sidenav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 750px;
+    background-color: rgb(196, 104, 18);
+    border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
+}
+.wrapper .sidenav img{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border: 8px solid rgb(240, 133, 107);
+    object-fit: cover;
+    margin-top: 158px;
+    margin-left: 40px;
+}
+.wrapper .sidenav ul{
+    margin-top: 20px;
+    margin-left: -52px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.wrapper .sidenav ul li{
+    list-style: none;
+    padding: 5px;
+    opacity: 0.7;
+}
+.wrapper .sidenav ul li:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.wrapper .sidenav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.wrapper .content{
+    width: 79%;
+    margin-left: 20%;
+}
+section{
+    height: 750px;
+    padding: 50px;
+    border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
+}
+#section1{
+    margin-top: 140px;
+}
+#section1 h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+#section1 h1 span{
+    color: rgb(196, 104, 18);
+}
+#section1 h2{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    opacity: 0.7;
+    margin-left: 9px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+#section1 h2 span{
+    color: rgb(196, 104, 18); 
+}
+#section1 .intro{
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0.7;
+    margin-top: 40px;
+    margin-left: 9px;
+}
+#section1 .socialmedia .col-sm-2{
+    width: 70px;
+}
+#section1 .socialmedia a{
+    background-color: rgb(51, 49, 49);
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.fab {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    width: 30px;
+    margin :20px 40px;
+    width: 50px;
+    margin: 39px 4px;
+}
+.fab:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-github{
+    color: white;   
+}
+section h1{
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+}
+section h2{
+    font-size: 27px;
+    font-family: 'Saira Condensed', sans-serif;
+    margin-top: 40px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+section h3{
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    opacity: 0.7;
+    font-weight: bold;
+    margin-top: -7px;
+}
+section h4{
+    font-family: 'Saira Condensed', sans-serif;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 20px;
+}
+section p{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0.7;
+    margin-right: 308px;
+    text-align: left;
+    margin-top: 20px;
+}
+#section2{
+    margin-top: 20px;
+    height: 1000px;
+}
+#section2 .job{
+    width: 100%;
+    height: 26%;
+} 
+#section2 .main-heading,#section3 .main-heading{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+#section2 h2, #section3 h2{
+    margin-top: 0;
+    width: 80%;
+}
+#section2 span,#section3 span{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    color: rgb(196, 104, 18);
+    width: 20%;
+}
+
+#section3{
+    margin-top: 80px;
+}
+#section3 .edu{
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+
+
+#section3 h1{
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(77, 75, 75);
+}
+#section3 h2 span{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    color: rgb(196, 104, 18);
+    width: 20%;
+}
+#section4{
+    margin-top: 20px;
+}
+#section4 h1{
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(77, 75, 75);
+}
+
+#section5{
+    margin-top: 20px;
+}
+#section5 h1{
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(77, 75, 75);
+}
+
+#section6{
+    margin-top: 20px;
+}
+#section6 h1{
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(77, 75, 75);
+}
+
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="sidenav">
+            <img src="images/profi.jfif" alt="">
+            <ul>
+                <li>
+                    <a href="#section1">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#section2">EXPERIENCE</a>
+                </li>
+                <li>
+                    <a href="#section3">EDUCATION</a>
+                </li>
+                <li>
+                    <a href="#section4">SKILLS</a>
+                </li>
+                <li>
+                    <a href="#section5">INTERESTS</a>
+                </li>
+                <li>
+                    <a href="#section6">AWARDS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="section1">
+                <h1>CLARENCE <span>TAYLOR</span></h1>
+                <h2>3542 BERRY STREET &middot; CHEYENNE WELLS, CO 80810 &middot; (317) 585-8468 <span>&middot;NAME@EMAIL.COM</span></h2>
+                <P class="intro">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</P>
+                <div class="socialmedia">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <a href="#" class="fab fa-facebook"></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#" class="fab fa-twitter"></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#" class="fab fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <h1>EXPERIENCE</h1>
+
+
+                <div class="job">
+                    <div class="main-heading">
+                        <h2>SENIOR WEB DEVELOPER</h2>
+                        <span>March 2013 - Present</span>
+                    </div>
+                    <h3>INTELITEC SOLUTIONS</h3>
+                <P>Bring to the table win-win survival statergies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</P>
+                </div>
+
+                <div class="job">
+                    <div class="main-heading">
+                        <h2>WEB DEVELOPER</h2>
+                        <span>December 2011 - March 2013</span>
+                    </div>
+                    <h3>INTELITEC SOLUTIONS</h3>
+                    <P>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on thw bottom line.</P>
+                </div>
+                
+                <div class="job">
+                    <div class="main-heading">
+                        <h2>JUNIOR WEB designer</h2>
+                        <span>July 2010 - December 2011</span>
+                    </div>
+                    <h3>SHOUT! MEDIA PRODUCTION</h3>
+                    <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                </div>
+
+
+                <div class="job">
+                    <div class="main-heading">
+                        <h2>WEB DESIGN PRODUCTION</h2>
+                        <span>September 2008 - June 2010</span>
+                    </div>
+                    <h3>SHOUT! MEDIA PRODUCTION</h3>
+                    <p>Collaboratively administrate empowered marketd via plug-and-play networks. Dynamically procratinate B2c users after installed after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p></p>
+                </div>
+            </section>
+
+            <section id="section3">
+                <h1>EDUCATION</h1>
+                <div class="edu">
+                    <div class="main-heading">
+                        <h2>UNIVERSITY OF COLORADO BOULDER</h2>
+                        <span>August 2006 - May 2010</span>
+                    </div>
+                    <h4>BACHELOR OF SCIENCE</h4>
+                    <P>Computer Science - Web Development Track <br>GPA: 3.23</P>
+                </div>
+
+                <div class="edu">
+                    <div class="main-heading">
+                        <h2>JAMES BUNCHANAN HIGH SCHOOL</h2>
+                        <span>September 2008 - June 2010</span>
+                    </div>
+                    <h4>TECHNOLOGY MAGNET PROGRAM</h4>
+                    <p>GPA: 3.56</p>
+                </div>
+
+            </section>
+
+
+            <section id="section4">
+                <h1>SKILLS</h1>
+
+            </section>
+            <section id="section5">
+                <h1>INTERESTS</h1>
+            </section>
+            <section id="section6">
+                <h1>AWARDS</h1>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>

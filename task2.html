@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo grid</title>
+    <link rel="stylesheet" href="booststrap/css/bootstrap.min.css">
+    <script src="booststrap/js/bootstrap.bundle.min.js"></script>
+    <!-- variable link for footer icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- social media icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+}
+.cont1 {
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+}
+/* nav bar section */
+
+.navbar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.topnav {
+  overflow: hidden;
+  width: 12%;
+}
+.navbar .list {
+    width: 5%;
+    margin-left:  10px;
+}
+.navbar .name{
+    width: 75%;
+}
+.navbar .name a{
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.navbar .topnav a{
+    background-color: white;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    float: right;
+    margin-right: 24px;
+    padding: 5px 15px 5px 15px;
+}
+
+/* body section */
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+.container-fluid .row{
+    width: 100%;
+    height: 600px;
+}
+.container-fluid .col-4 h1{
+height: 70px;
+font-family: 'Poppins', sans-serif;
+font-size: 30px;
+margin-top: 234px;
+}
+.container-fluid .col-4 button{
+    box-sizing: 40px;
+    background-color: rgb(117, 52, 15);
+    border-radius: none;
+    border: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+.container-fluid .col-8 img{
+    height: 600px;
+    width: 100%;
+}
+.cont2{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.cont2 .img2{
+    height: 600px;
+    width: 65%
+}     
+.cont2 .img2 img{
+    height: 600px;
+    width: 100%; 
+}
+.cont2 .about {
+    width: 35%;
+    height: 600px;
+    background-color: rgb(197, 89, 27);
+}
+.cont2 .about h2{
+    width: 10;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+.cont2 .about .aboutus{
+    width: 100%;
+    height: 120px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 30px;
+}
+.unline1 {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+.cont2 .about button{
+    box-sizing: 40px;
+    background-color: rgb(117, 52, 15);
+    border-radius: none;
+    border: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-left: 190px;
+    margin-top: 20px;
+
+}
+.cont3 {
+    height: 1100px;
+    background-color: aliceblue;
+}
+.cont3 h1{
+    width: 10%;
+    height: 20px;
+    color: black;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+.unline2 {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-left: 670px;
+    width: 38px;
+    height: 4px;
+    background-color:rgb(117, 52, 15);
+    border-radius: 10px;
+}
+.cont3 .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 30px 100px;
+}
+.cont3 .column {
+  -ms-flex: 33.3%; 
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+.cont3 .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+.cont3 .column .full {
+    width: 100%;
+    height: 100%;
+}
+.cont3 .column .full img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 101%;
+}
+.cont3 .seemore {
+    box-sizing: 40px;
+    background-color: rgb(117, 52, 15);
+    border-radius: none;
+    border: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin: 50px 45%;
+}
+.cont4{
+    height: 800px;
+}
+.cont4 .row{
+    --bs-gutter-x: 0rem;
+}
+.cont4 .col-4{
+    height: 800px;
+    background-color: rgb(197, 89, 27);
+}
+.cont4 .text h1{
+    width: 10;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 345px;
+}
+.cont4 .text p{
+    width: 100%;
+    height: 120px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 8px;
+}
+.cont4 .unline3{
+    margin: 0 auto;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.teampic{
+   width:100%;
+   height:800px;
+   }
+
+.cont4 .teampic .row {
+  width: 100%;
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 400px;
+
+}    
+.cont4 .teampic .row .column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 60%;
+  padding: 25px;
+  height: 100%;
+}
+.cont4 .column img {
+  vertical-align: middle;
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* footer section */
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 470px;
+    background-color: rgb(197, 89, 27);
+}
+.section1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.section1 .col{
+    width: 60%;
+    background-color: aliceblue;
+}
+.section1 .location{
+    width: 100%;
+    height: 100%;
+}
+.section1 .text h1{
+    width: 50%;
+    height: 35px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.section1 .unline4{
+    margin: 0 auto;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 170px;
+}
+.section1 .col2{
+    width: 40%;
+}
+.section1 .links{
+    width: 100%;
+    height: 300px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: white;
+  font-size: 20px;
+  margin: 0 aut0;
+  margin-left: 135px;
+  margin-top: 25px;
+}
+.section1 .links ul{
+    list-style-type: none;
+}
+.section1 .links li{
+    height: 35px;
+}
+.section1 .links .col-sm-11{
+    margin-top: 22px;
+    height: 20px;
+}
+.section1 .links a{
+    text-decoration: none;
+    color: white;
+    margin-left:  118px;
+}
+.fa {
+    padding: 11px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 34px 9px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-linkedin {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.section1 .links .social .row{
+    height: 20px;
+    margin-top: -18px;
+    width: 70%;
+    margin-left: 1px;
+}
+.section2{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(114, 50, 12);;
+    display: flex;
+    flex-direction: row;
+}
+.section2 .copy{
+    height: 70px;
+    width: 50%;
+}
+.section2 p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 13px;
+    padding: 26px 20px;
+}
+.section2 .label{
+    width: 50%;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.section2 .label a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+}
+.section2 .label a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+</style>
+<body>
+    <div class="cont1" id="top">
+        <div class="navbar">
+            <div class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 13 13">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+            <div class="name">
+                <a href="#name">PHOTOSEC</a>
+            </div>
+            <div class="topnav">
+                <a href="#contact">CALL US NOW</a>
+            </div>
+        </div> 
+        <div class="container-fluid">
+            <div class="row" style="margin-left:0%;">
+                <div class="col-4">
+                    <div class="text">
+                        <h1>PHOTOGRAPHY STUDIO</h1>
+                        <button type="button" class="button1">READ MORE</button> 
+                    </div>
+                </div>
+                <div class="col-8" style="padding-left:0%; padding-right:0%;">
+                    <img src="images/photo1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont2">
+        <div class="img2">
+            <img src="images/photo2.jfif" alt="" style="object-fit: fill;">     
+        </div>
+        <div class="about">
+            <h2>ABOUT US</h2>
+            <div class="unline1"></div>
+            <p class="aboutus">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using loremit is a long established fact that a reader will be distracted by
+                 the readable content of a page when looking at its layout. The point of using lorem
+            </p>
+            <button type="button">READ MORE</button>
+        </div>
+    </div>
+    <div class="cont3">
+        <h1>PORTFOLIO</h1>
+        <div class="unline2"></div>
+        <div class="row"> 
+            <div class="column">
+                <img src="images/cont2pic1.jpg" alt="">
+                <img src="images/cont2pic2.jpg" alt="">
+            </div>
+            <div class="column">
+                <div class="full"><img src="images/cont2pic3.jpg" alt=""></div>
+            </div>
+            <div class="column">
+                <img src="images/cont2pic4.jpg" alt="">
+                <img src="images/cont2pic5.webp" alt="">
+            </div>
+        </div>
+        <button type="button" class="seemore">SEE MORE</button>     
+    </div>
+    <div class="cont4">
+        <div class="row">
+            <div class="col-4">
+                <div class="text">
+                    <h1>OUR CREATIVE TEAM</h1>
+                    <div class="unline3"></div>
+                    <p>The point of using loremit is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="teampic">
+                    <div class="row"> 
+                      <div class="column">
+                            <img src="images/m1.jpeg">
+                       </div>
+                       <div class="column">
+                            <img src="images/m2.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/m3.jpg" style="width:400px; height: 300px; border-radius: 5%; margin: 0 auto; margin-top: 30px;" >
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="section1">
+            <div class="col">
+                <!-- gmap using direct link -->
+                <!-- <div class="loction">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.609295002586!2d74.99300903782927!3d12.507636071557622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba483d25c8a7d37%3A0x37a30287fb9e45!2sStack%20Technology%20Centre!5e0!3m2!1sen!2sin!4v1697787621180!5m2!1sen!2sin" width="810" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
+                <!-- gmap using latlng -->
+                <div class="location">
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="text">
+                    <h1>GET IN TOUCH</h1>
+                    <div class="unline4"></div>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <span class="material-symbols-outlined">
+                                        location_on
+                                    </span>
+                                </div>
+                                <div class="col-sm-11">
+                                    <a href="#">Location</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <span class="material-symbols-outlined">
+                                        call
+                                    </span>
+                                </div>
+                                <div class="col-sm-11">
+                                    <a href="#">Call +01123456789</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <span class="material-symbols-outlined">
+                                        mail
+                                    </span>
+                                </div>
+                                <div class="col-sm-11">
+                                    <a href="#">demo@gmail.com</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="social">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#" class="fa fa-linkedin"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#" class="fa fa-instagram"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="section2">
+            <div class="copy">
+                <p>&copy; 2023 All Rights Reserved. Design by Free Html Templates</p>
+            </div>
+            <div class="label">
+                <a href="#top">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Team</a>
+            </div>
+            
+
+        </div>
+        
+    </footer>
+     <!-- gmap using latlng -->
+    <script>
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(12.5076439,74.9942053),
+        zoom:18,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+            
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+        </script>
+    
+</body>
+</html>
