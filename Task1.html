@@ -17,7 +17,6 @@
             height: 800px;
             align-items: center;
             justify-content: center;
-            
         }
         .title{
             padding-top: 4em;
@@ -40,13 +39,12 @@
 
         }
         .div2{
-            margin: 5px 121px  0px;
+            margin: 5px 61px 0px 90px;
             background-color: white;
-            width: 80%;
+            width: 86%;
             height: 350px;
             display: flex;
             flex-direction: row;
-            
         }
         .div2 .text{
             width: 70%;
@@ -54,9 +52,9 @@
             align-items: center;
         }
         .div2 p{
-            font-size: 30px;
+            font-size: 34px;
             font-family: 'Times New Roman', Times, serif;
-            margin-left: 45px;
+            margin-left: 50px;
             width: 85%;
             padding-top:140px;
         }
@@ -84,12 +82,146 @@
             font-size: 13px;
             font-family: 'Times New Roman', Times, serif;
             line-height: 20px;
-            /* letter-spacing: 1px; */
+            letter-spacing: 1px;
         }
 
-       
-        
+        /* media query for extra small devices - screen width less than 576px */
+        @media only screen and (max-width: 576px) and (min-width: 400px){
+        body {
+            background-color: lightblue;
+        }
+        .container{
+            width: 90%;
+            height: 935px;
+        }
 
+        .div2{
+            margin: 5px 33px 0px 32px;
+            height: 180px;
+        }
+        .div2 .text{
+            width: 65%;
+        }
+        .div2 p{
+            font-size: 20px;
+            margin-left: 16px;
+            width: 90%;
+            padding-top: 48px;
+        }
+        .div3{
+            width: 43%;
+        }
+        }
+
+         /*media query for small devices - screen width 576px - 768px  */
+         @media only screen and (max-width: 768px) and (min-width: 576px) {
+        body {
+            background-color: rgb(212, 45, 16);
+        }
+        .container{
+            height: 846px;
+        }
+        .div2{
+            margin: 5px 35px 0px 49px;
+            height: 200px;
+        }
+        .div2 .text{
+            width: 65%;
+        }
+        .div2 p{
+            font-size: 24px;
+            margin-left: 15px;
+            width: 90%;
+            padding-top: 62px;
+        }
+        .div3{
+            width: 42%;
+        }
+        }   
+        
+        /*media query for small devices - screen width 768px - 992px  */
+
+        @media only screen and (max-width: 992px) and (min-width: 768px) {
+        body {
+            background-color: rgb(136, 238, 3);
+        }
+        .container{
+            height: 920px;
+        }
+        .div2{
+            margin: 5px 53px 0px 70px;
+            height: 265px;
+        }
+        .div2 .text{
+            width: 65%;
+        }
+        .div2 p{
+            font-size: 27px;
+            margin-left: 15px;
+            width: 90%;
+            padding-top: 88px;
+        }
+        .div3{
+            width: 33%;
+        }
+        } 
+
+        /*media query for small devices - screen width 992px - 1200px  */
+
+        @media only screen and (max-width: 1200px) and (min-width: 992px) {
+        body {
+            background-color: rgb(192, 16, 104);
+        }
+        .container{
+            height: 915px;
+        }
+        .div2{
+            margin: 5px 53px 0px 70px;
+            height: 275px;
+        }
+        .div2 .text{
+            width: 66%;
+        }
+        .div2 .image{
+            width: 34%;
+        }
+        .div2 p{
+            font-size: 29px;
+            margin-left: 25px;
+            width: 90%;
+            padding-top: 100px;
+        }
+        .div3{
+            width: 27%;
+        }
+        } 
+
+        /*media query for small devices - screen width 1200px - 1400px  */
+
+        @media only screen and (max-width: 1400px) and (min-width: 1200px){
+        body {
+            background-color: rgb(21, 247, 198);
+        }
+        .container{
+            height: 800px;
+        }
+        .div2{
+            margin: 5px 61px 0px 90px;
+            width: 76%;
+        }
+        .div2 .text{
+            width: 70%;
+        }
+        .div2 p{
+            font-size: 34px;
+            margin-left: 50px;
+            width: 85%;
+            padding-top:140px;
+        }
+        .div3{
+            width: 40%;
+        }
+        } 
     </style>
     
 </head>
