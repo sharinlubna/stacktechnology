@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- social media icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
  *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .cont1 {
     width: 100%;
@@ -50,13 +55,13 @@
     font-weight: bold;
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
 
 }
 .navbar .topnav a{
     background-color: white;
-    border: none;
     color: black;
+    border: none;
     text-decoration: none;
     font-weight: bold;
     font-size: 10px;
@@ -82,14 +87,12 @@
     width: 80%;
 }
 .container-fluid .text h1{
-height: 70px;
-font-family: 'Poppins', sans-serif;
-font-size: 30px;
-margin-top: 234px;
-margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-top: 234px;
+    margin-left: 15px;
 }
-.container-fluid .col-4 button{
-    box-sizing: 40px;
+.container-fluid .col-sm-4 button{
     background-color: rgb(117, 52, 15);
     border-radius: none;
     border: none;
@@ -99,58 +102,51 @@ margin-left: 15px;
     margin-top: 15px;
     margin-left: 15px;
 }
-.container-fluid .col-8 img{
+.container-fluid .col-sm-8 img{
     height: 600px;
     width: 100%;
 }
 .cont2{
-    margin: 0;
-    padding: 0;
     height: 600px;
-    display: flex;
-    flex-direction: row;
 }
-.cont2 .img2{
+.cont2 .row{
+    width: 100%;
     height: 600px;
-    width: 65%
+}
+.cont2 img{
+    height: 600px;
+    width: 100%
 }     
-.cont2 .img2 img{
-    height: 600px;
-    width: 100%; 
-}
 .cont2 .about {
-    width: 35%;
     height: 600px;
     background-color: rgb(197, 89, 27);
+    padding-top: 179px;
 }
-.cont2 .about h2{
-    width: 10;
-    height: 20px;
+.cont2 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     text-align: center;
     color: white;
-    margin-top: 200px;
+    margin-bottom: -0.5rem;
 }
 .cont2 .about .aboutus{
     width: 100%;
-    height: 120px;
+    height: 150px;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     padding: 20px 30px;
 }
 .unline1 {
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 7px;
     width: 40px;
     height: 4px;
     background-color: white;
     border-radius: 10px;
 }
 .cont2 .about button{
-    box-sizing: 40px;
     background-color: rgb(117, 52, 15);
     border-radius: none;
     border: none;
@@ -158,7 +154,7 @@ margin-left: 15px;
     font-size: 13px;
     padding: 5px 20px;
     margin: 0 auto;
-    margin-left: 170px;
+    margin-left: 178px;
     margin-top: 20px;
 }
 .cont3 {
@@ -166,9 +162,6 @@ margin-left: 15px;
     background-color: aliceblue;
 }
 .cont3 h1{
-    width: 10%;
-    height: 20px;
-    color: black;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -177,8 +170,7 @@ margin-left: 15px;
 }
 .unline2 {
     margin: 0 auto;
-    margin-top: 36px;
-    margin-left: 615px;
+    margin-left: 670px;
     width: 38px;
     height: 4px;
     background-color:rgb(117, 52, 15);
@@ -216,7 +208,6 @@ margin-left: 15px;
     height: 101%;
 }
 .cont3 .seemore {
-    box-sizing: 40px;
     background-color: rgb(117, 52, 15);
     border-radius: none;
     border: none;
@@ -228,21 +219,17 @@ margin-left: 15px;
 .cont4{
     height: 800px;
 }
-.cont4 .row{
-    --bs-gutter-x: 0rem;
-}
-.cont4 .col-4{
+.cont4 .col-sm-4{
     height: 800px;
     background-color: rgb(197, 89, 27);
 }
 .cont4 .text h1{
-    width: 10;
-    height: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     text-align: center;
     color: white;
     margin-top: 345px;
+    margin-bottom: 0;
 }
 .cont4 .text p{
     width: 100%;
@@ -251,15 +238,14 @@ margin-left: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: center;
-    padding: 5px 28px;
+    padding: 14px 28px;
 }
 .cont4 .unline3{
     margin: 0 auto;
-    width: 30px;
+    width: 40px;
     height: 4px;
     background-color: white;
     border-radius: 15px;
-    margin-top: 15px;
 }
 .teampic{
    width:100%;
@@ -277,7 +263,7 @@ margin-left: 15px;
 
 }    
 .cont4 .teampic .row .column {
-  -ms-flex: 50%; /* IE10 */
+  -ms-flex: 50%;
   flex: 50%;
   max-width: 60%;
   padding: 25px;
@@ -290,6 +276,13 @@ margin-left: 15px;
   border-radius: 10px;
   object-fit: cover;
 }
+.teampic #pic3{
+    width:400px;
+    height: 300px;
+    border-radius: 5%; 
+    margin-top: 30px;
+    margin: 0 auto;
+}
 
 /* footer section */
 footer{
@@ -301,11 +294,8 @@ footer{
 .section1{
     width: 100%;
     height: 400px;
-    display: flex;
-    flex-direction: row;
 }
-.section1 .col{
-    width: 60%;
+.section1 .col-sm-7{
     background-color: aliceblue;
 }
 .section1 .location{
@@ -313,8 +303,6 @@ footer{
     height: 100%;
 }
 .section1 .text h1{
-    width: 50%;
-    height: 35px;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -329,14 +317,11 @@ footer{
     height: 4px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 144px;
-}
-.section1 .col2{
-    width: 40%;
+    margin-left: 190px;
 }
 .section1 .links{
     width: 100%;
-    height: 300px;
+    height: 130px;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -353,6 +338,7 @@ footer{
 .section1 .links ul{
     list-style-type: none;
     padding-left: 0;
+    margin-left: 36px;
 }
 .section1 .links li{
     height: 35px;
@@ -367,12 +353,12 @@ footer{
     margin-left:  118px;
 }
 .fa {
-    padding: 11px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 24px;
     width: 15px;
     text-align: center;
     text-decoration: none;
-    margin: 34px 9px;
+    margin: 0px 9px;
     border-radius: 50%;
 }
 .fa:hover {
@@ -390,16 +376,20 @@ footer{
 .fa-instagram {
   color: white;
 }
-.section1 .links .social .row{
+.section1 .social{
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+}
+.section1 .social .row{
     height: 20px;
-    margin-top: -18px;
-    width: 70%;
-    margin-left: 7px;
+    margin-top: 0;
+    margin-left: 15px;
 }
 .section2{
     width: 100%;
     height: 70px;
-    background-color: rgb(114, 50, 12);;
+    background-color: rgb(114, 50, 12);
     display: flex;
     flex-direction: row;
 }
@@ -431,7 +421,313 @@ footer{
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+/* media query for extra small devices - screen width less than 576px */
+
+@media only screen and (max-width: 576px){
+.cont1 {
+    height: 543px;
+    width: 100%;
+}
+.navbar{
+    position: relative;
+}
+.navbar .list {
+    width: 7%;
+    margin-left: 5px;
+}
+.navbar svg{
+    width: 22px;
+    height: 22px;
+}
+.navbar .name{
+    width: 50%;
+    text-align: left;
+}
+.navbar .name a{
+    font-size: 17px;
+}
+.topnav {
+  width: 30%;
+}
+.navbar .topnav a{
+    font-size: 10px;
+    margin-right: 5px;
+    padding: 2px 10px 2px 10px;
+}
+
+.cont1 .col-sm-4{
+    height: 250px;
+}
+.cont1 .col-sm-8{
+    height: 250px;
+}
+.container-fluid{
+    height: 250px;
+}
+.container-fluid .row{
+    height: 500px;
+}
+.container-fluid .text{
+    height: 140px;
+}
+.container-fluid .text h1{
+font-size: 25px;
+margin-top: 100px;
+margin-left: 15px;
+}
+.container-fluid .col-sm-4 button{
+    font-size: 10px;
+    padding: 5px 15px;
+}
+.container-fluid .col-sm-8 img{
+    height: 250px;
+}
+.cont2{
+    height: 500px;
+}
+.cont2 .row{
+    height: 500px;
+}
+.cont2 .col-sm-4{
+    height: 250px;
+}
+.cont2 .col-sm-8{
+    height: 250px;
+}
+.cont2 img{
+    height: 250px;
+}
+.cont2 .about{
+    height: 250px;
+    padding-top: 35px;
+}
+.cont2 h2{
+    font-size: 25px;
+}
+.cont2 .about .aboutus{
+    height: 100px;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin-bottom: 0;
+}
+.unline1{
+    width: 32px;
+    height: 2px;
+}
+.cont2 .about button{
+    font-size: 10px;
+    padding: 5px 15px;
+    margin-left: 240px;
+    margin-top: 0;
+}
+.cont3{
+    height: 1680px;
+}
+.cont3 h1{
+    font-size: 25px;
+    padding-top: 25px;
+}
+.unline2 {
+    margin-top: 0px;
+    margin-left: 275px;
+    width: 30px;
+    height: 2px;
+}
+.cont3 .row{
+   padding: 10px 10px;
+}   
+.cont3 .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+    height: 500px;
+    margin-top: 10px;
+}
+.cont3 .column img {
+  margin-top: 0;
+  vertical-align:0;
+  width: 100%;
+  height: 49.5%;
+  padding: 0;
+}
+.cont3 .column .full img{
+    margin-top: 0;
+    vertical-align: 0;
+    width: 100%;
+    height: 100%;
+}
+.cont3 .seemore {
+    font-size: 10px;
+    padding: 5px 15px;
+    margin-left: 240px;
+    margin-top: 10px;
+}
+.cont4{
+    height: 1463px;
+}
+.cont4 .col-sm-4{
+    height: 300px;
+}
+.cont4 .text{
+    padding-top: 80px;
+}
+.cont4 .text h1{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cont4 .text p{
+    font-size: 17px;
+    padding: 10px 15px;
+    height: 100px;
+}
+.cont4 .unline3{
+    height: 2px;
+    margin-top: 0;
+    width: 40px;
+}
+.teampic{
+   height:1163px;
+}
+.cont3 .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+    height: 500px;
+    margin-top: 10px;
+}
+.cont4 .teampic .row .column {
+  -ms-flex: 100%; 
+  flex: 100%;
+  max-width: 100%;
+  padding: 10px;
+  height: 100%;
+}
+.cont4 .column img {
+  vertical-align: 0;
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.teampic #pic3{
+    width: 535px;
+    height: 350px;
+    border-radius: 3%;
+    margin: 0 auto;
+    margin-top: 371px;
+}
+footer{
+    height: 660px;
+}
+.section1{
+    height: 660px;
+}
+.section1 .col-sm-5{
+    height: 300px;
+}
+.section1 .text h1{
+    font-size: 25px;
+    margin-top: 60px;
+}
+.section1 .unline4{
+    height: 2px;
+    margin-left: 200px;
+}
+.section1 .links{
+    height: 88px;
+}
+.material-symbols-outlined {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+.section1 .links ul{
+    margin-left: 120px;
+}
+.section1 .links li{
+    height: 20px;
+    margin-top: 12px;
+}
+.section1 .links .col-sm-11{
+    margin-top: -29px;
+    height: 20px;
+}
+.section1 .links a{
+    margin-left:  100px;
+}
+.fa {
+    padding: 0;
+    font-size: 25px;
+    width: 15px;
+    border-radius: 50%;
+}
+.section1 .social .row{
+    margin-left: 0;
+    margin-top: 25px;
+    flex-direction: column;
+}
+.section1 .social .col-sm-2{
+    width: 30px;
+}
+.section2{
+    height: 50px;
+}
+.section2 .copy{
+    height: 50px;
+}
+.section2 p{
+    font-size: 8px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+.section2 .label {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.section2 .label a{
+    font-size: 8px;
+}
+}
+
+/*media query for small devices - screen width 576px - 768px  */
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+
+}
+
+/*media query for small devices - screen width 768px - 992px  */
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+}
+
+/*media query for small devices - screen width 992px - 1200px  */
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+.cont2 .about button{
+    margin-top: 35px;
+    margin-left: 150px;
+}
+.cont3 {
+    height: 1000px;
+}
+.unline2{
+    margin-left: 576px;
+}
+.teampic #pic3{
+    margin-top: 35px;
+} 
+.section1 .unline4{
+    margin-left: 150px;
+}   
+}
+
 </style>
+</head>
+
 <body>
     <div class="cont1" id="top">
         <div class="navbar">
@@ -448,30 +744,34 @@ footer{
             </div>
         </div> 
         <div class="container-fluid">
-            <div class="row" style="margin-left:0%;">
-                <div class="col-4">
+            <div class="row">
+                <div class="col-sm-4">
                     <div class="text">
                         <h1>PHOTOGRAPHY STUDIO</h1>
                         <button type="button" class="button1">READ MORE</button> 
                     </div>
                 </div>
-                <div class="col-8" style="padding-left:0%; padding-right:0%;">
+                <div class="col-sm-8">
                     <img src="images/photo1.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="cont2">
-        <div class="img2">
-            <img src="images/photo2.jfif" alt="" style="object-fit: fill;">     
-        </div>
-        <div class="about">
-            <h2>ABOUT US</h2>
-            <div class="unline1"></div>
-            <p class="aboutus">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using loremit is a long established fact that a reader will be distracted by
-                 the readable content of a page when looking at its layout. The point of using lorem
-            </p>
-            <button type="button">READ MORE</button>
+        <div class="row">
+            <div class="col-sm-8">
+                <img src="images/photo2.jfif" alt="" style="object-fit: fill;">     
+            </div>
+            <div class="col-sm-4">
+                <div class="about">
+                    <h2>ABOUT US</h2>
+                    <div class="unline1"></div>
+                    <p class="aboutus">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using loremit is a long established fact that a reader will be distracted by
+                         the readable content of a page when looking at its layout. The point of using lorem
+                    </p>
+                    <button type="button">READ MORE</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="cont3">
@@ -494,14 +794,14 @@ footer{
     </div>
     <div class="cont4">
         <div class="row">
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="text">
                     <h1>OUR CREATIVE TEAM</h1>
                     <div class="unline3"></div>
                     <p>The point of using loremit is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-sm-8">
                 <div class="teampic">
                     <div class="row"> 
                       <div class="column">
@@ -512,85 +812,86 @@ footer{
                         </div>
                     </div>
                     <div class="row">
-                        <img src="images/m3.jpg" style="width:400px; height: 300px; border-radius: 5%; margin: 0 auto; margin-top: 30px;" >
+                            <img id="pic3" src="images/m3.jpg">
                     </div>  
                 </div>
-                
             </div>
         </div>
     </div>
     <footer>
         <div class="section1">
-            <div class="col">
-                <!-- gmap using direct link -->
-                <!-- <div class="loction">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.609295002586!2d74.99300903782927!3d12.507636071557622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba483d25c8a7d37%3A0x37a30287fb9e45!2sStack%20Technology%20Centre!5e0!3m2!1sen!2sin!4v1697787621180!5m2!1sen!2sin" width="810" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
-                <!-- gmap using latlng -->
-                <div class="location">
-                    <div id="googleMap" style="width:100%;height:400px;"></div>
+            <div class="row">
+                <div class="col-sm-7"> 
+                    <!-- gmap using direct link -->
+                    <!-- <div class="loction">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.609295002586!2d74.99300903782927!3d12.507636071557622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba483d25c8a7d37%3A0x37a30287fb9e45!2sStack%20Technology%20Centre!5e0!3m2!1sen!2sin!4v1697787621180!5m2!1sen!2sin" width="810" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> -->
+                    <!-- gmap using latlng -->
+                    <div class="location">
+                        <div id="googleMap" style="width:100%;height:400px;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="col2">
-                <div class="text">
-                    <h1>GET IN TOUCH</h1>
-                    <div class="unline4"></div>
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-1">
-                                    <span class="material-symbols-outlined">
-                                        location_on
-                                    </span>
+                <div class="col-sm-5">
+                    <div class="text">
+                        <h1>GET IN TOUCH</h1>
+                        <div class="unline4"></div>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <span class="material-symbols-outlined">
+                                            location_on
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <a href="#">Location</a>
+                                    </div>
                                 </div>
-                                <div class="col-sm-11">
-                                    <a href="#">Location</a>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <span class="material-symbols-outlined">
+                                            call
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <a href="#">Call +01123456789</a>
+                                    </div>
                                 </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <a href="#">demo@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>       
+                    <div class="social">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <a href="#" class="fa fa-facebook"></a>
                             </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-1">
-                                    <span class="material-symbols-outlined">
-                                        call
-                                    </span>
-                                </div>
-                                <div class="col-sm-11">
-                                    <a href="#">Call +01123456789</a>
-                                </div>
+                            <div class="col-sm-2">
+                                <a href="#" class="fa fa-twitter"></a>
                             </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-1">
-                                    <span class="material-symbols-outlined">
-                                        mail
-                                    </span>
-                                </div>
-                                <div class="col-sm-11">
-                                    <a href="#">demo@gmail.com</a>
-                                </div>
+                            <div class="col-sm-2">
+                                <a href="#" class="fa fa-linkedin"></a>
                             </div>
-                        </li>
-                        <li class="social">
-                            <div class="row">
-                                <div class="col-sm-1">
-                                    <a href="#" class="fa fa-facebook"></a>
-                                </div>
-                                <div class="col-sm-1">
-                                    <a href="#" class="fa fa-twitter"></a>
-                                </div>
-                                <div class="col-sm-1">
-                                    <a href="#" class="fa fa-linkedin"></a>
-                                </div>
-                                <div class="col-sm-1">
-                                    <a href="#" class="fa fa-instagram"></a>
-                                </div>
+                            <div class="col-sm-2">
+                                <a href="#" class="fa fa-instagram"></a>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -610,7 +911,7 @@ footer{
         </div>
         
     </footer>
-     <!-- gmap using latlng -->
+    <!-- gmap using latlng -->
     <script>
         function myMap() {
         var mapProp= {
@@ -619,10 +920,10 @@ footer{
         };
         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         }
-        </script>
+    </script>
             
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-        </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
     
 </body>
 </html>
