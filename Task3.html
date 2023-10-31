@@ -8,248 +8,521 @@
     <script src="booststrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
     *{
         margin: 0;
         padding: 0;
         scroll-behavior: smooth;
-}
-.wrapper{
-    width: 100%;
-    height: 750px;  
-}
-.wrapper .sidenav{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 20%;
-    height: 750px;
-    background-color: rgb(196, 104, 18);
-    border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
-}
-.wrapper .sidenav img{
-    height: 175px;
-    width: 175px;
-    border-radius: 50%;
-    border: 8px solid rgb(240, 133, 107);
-    object-fit: cover;
-    margin-top: 158px;
-    margin-left: 40px;
-}
-.wrapper .sidenav ul{
-    margin-top: 20px;
-    margin-left: -52px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    text-align: center;
-}
-.wrapper .sidenav ul li{
-    list-style: none;
-    padding: 5px;
-    opacity: 0.7;
-}
-.wrapper .sidenav ul li:hover{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.wrapper .sidenav a{
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-}
-.wrapper .content{
-    width: 79%;
-    margin-left: 20%;
-}
-section{
-    height: 750px;
-    padding: 50px;
-    border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
-}
-#section1{
-    margin-top: 140px;
-}
-#section1 h1{
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 4.5em;
-    font-weight: bold;
-}
-#section1 h1 span{
-    color: rgb(196, 104, 18);
-}
-#section1 h2{
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
-    opacity: 0.7;
-    margin-left: 9px;
-    font-weight: bold;
-    margin-top: -20px;
-}
-#section1 h2 span{
-    color: rgb(196, 104, 18); 
-}
-#section1 .intro{
-    font-family: 'Roboto Condensed', sans-serif;
-    opacity: 0.7;
-    margin-top: 40px;
-    margin-left: 9px;
-}
-#section1 .socialmedia .col-sm-2{
-    width: 70px;
-}
-#section1 .socialmedia a{
-    background-color: rgb(51, 49, 49);
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-.fab {
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    width: 30px;
-    margin :20px 40px;
-    width: 50px;
-    margin: 39px 4px;
-}
-.fab:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-    color: white;
-}
-.fa-twitter {
-    color: white;
-}
-.fa-linkedin {
-    color: white;
-}
-.fa-github{
-    color: white;   
-}
-section h1{
-    font-size: 50px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-}
-section h2{
-    font-size: 27px;
-    font-family: 'Saira Condensed', sans-serif;
-    margin-top: 40px;
-    font-weight: bold;
-    opacity: 0.9;
-}
-section h3{
-    font-size: 20px;
-    font-family: 'Saira Condensed', sans-serif;
-    opacity: 0.7;
-    font-weight: bold;
-    margin-top: -7px;
-}
-section h4{
-    font-family: 'Saira Condensed', sans-serif;
-    opacity: 0.7;
-    font-weight: bold;
-    font-size: 20px;
-}
-section p{
-    font-size: 16px;
-    font-family: 'Roboto Condensed', sans-serif;
-    opacity: 0.7;
-    margin-right: 308px;
-    text-align: left;
-    margin-top: 20px;
-}
-#section2{
-    margin-top: 20px;
-    height: 1000px;
-}
-#section2 .job{
-    width: 100%;
-    height: 26%;
-} 
-#section2 .main-heading,#section3 .main-heading{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-}
-#section2 h2, #section3 h2{
-    margin-top: 0;
-    width: 80%;
-}
-#section2 span,#section3 span{
-    font-size: 16px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: right;
-    color: rgb(196, 104, 18);
-    width: 20%;
+    }
+    .wrapper{
+        width: 100%;
+        height: 750px;  
+    }
+    .wrapper .sidenav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 20%;
+        height: 750px;
+        background-color: rgb(196, 104, 18);
+        border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
+    }
+    .wrapper .sidenav .profile{
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        border: 8px solid rgb(240, 133, 107);
+        object-fit: cover;
+        margin-top: 158px;
+        margin-left: 40px;
+    }
+    .wrapper .sidenav ul{
+        margin-top: 20px;
+        margin-left: -52px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    .wrapper .sidenav ul li{
+        list-style: none;
+        padding: 5px;
+        opacity: 0.7;
+    }
+    .wrapper .sidenav ul li:hover{
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .wrapper .sidenav a{
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .wrapper .content{
+        width: 79%;
+        margin-left: 20%;
+    }
+    section{
+        height: 750px;
+        padding: 50px;
+        border-bottom: 1px solid rgba(126, 122, 122, 0.192); 
+    }
+    #section1 .page1{
+        margin-top: 150px;
+    }
+    #section1 h1{
+        font-family: 'Saira Condensed', sans-serif;
+        font-size: 4.5em;
+        font-weight: bold;
+    }
+    #section1 h1 span{
+        color: rgb(196, 104, 18);
+    }
+    #section1 h2{
+        font-family: 'Saira Condensed', sans-serif;
+        font-size: 20px;
+        margin-left: 9px;
+        font-weight: bold;
+        margin-top: -20px;
+        color: rgb(109, 109, 109);
+    }
+    #section1 h2 span{
+        color: rgb(196, 104, 18); 
+    }
+    #section1 .intro{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(170, 169, 169);
+        margin-top: 40px;
+        margin-left: 9px;
+    }
+    #section1 .socialmedia .col-sm-2{
+        width: 70px;
+    }
+    #section1 .socialmedia a{
+        background-color: rgb(51, 49, 49);
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    .fab {
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        margin :20px 40px;
+        width: 50px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        color: white;
+    }
+    .fa-twitter {
+        color: white;
+    }
+    .fa-linkedin {
+        color: white;
+    }
+    .fa-github{
+        color: white;   
+    }
+    section h1{
+        font-size: 50px;
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: bold;
+    }
+    section h2{
+        font-size: 27px;
+        font-family: 'Saira Condensed', sans-serif;
+        margin-top: 40px;
+        font-weight: bold;
+        color: rgb(10, 10, 10);
+    }
+    section h3{
+        font-size: 20px;
+        font-family: 'Saira Condensed', sans-serif;
+        color: rgb(170, 169, 169);
+        font-weight: bold;
+        margin-top: -7px;
+    }
+    section h4{
+        font-family: 'Saira Condensed', sans-serif;
+        color: rgb(170, 169, 169);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    section p{
+        font-size: 16px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(170, 169, 169);
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 40px;
+    }
+    #section2{
+        height: 1000px;
+    }
+    #section2 .job{
+        width: 100%;
+        height: 26%;
+    } 
+    #section2 .main-heading,#section3 .main-heading{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #section2 h2, #section3 h2{
+        margin-top: 0;
+        width: 80%;
+    }
+    #section2 span,#section3 span{
+        font-size: 16px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: right;
+        color: rgb(196, 104, 18);
+        width: 20%;
+    }
+    #section3 .page3{
+        margin-top: 50px;
+    }
+    #section3 .edu{
+        width: 100%;
+        height: 30%;
+        margin-top: 30px;
+    }
+    #section4 .page4{
+        margin-top: 50px;
+    }
+    #section4 h2{
+        color: rgb(170, 169, 169);
+        font-size: 20px;
+        font-weight:lighter;
+    }
+    #section4 .row{
+        width: 80%;
+        margin-top: 30px;
+    }
+    #section4 .col-sm-2{
+        width: 65px;
+    }
+    #section4 .col-sm-2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 45px;
+    }
+    #section4 .fab, #section4 .fa-brands  {
+        border-radius: 50%;
+        text-align: center;
+        font-size: 40px;
+        margin: 20px 40px;
+        width: 40px;
+        margin: 0px 4px;
+    }
+    #section4 .col-sm-2 img{
+        width: 40px;
+        height: 40px;
+        opacity: 0.6;
+        margin-top: 15px;
+    }
+    #section4 p{
+        line-height: 10px;
+        margin-top: 20px;
+    }
+    
+    #section5 .page5{
+        margin-top: 150px;
+    }
+    #section5 .interests{
+        height: 300px;
+        margin-top: 40px;
+    }
+    #section5 p{
+        margin-right: 0;
+    }
+    #section6 .page6{
+        margin-top: 150px;
+    }
+    #section6 .awards{
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+    #section6 p{
+        line-height: 10px;
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+
+
+    
+    /* media query */
+
+    /* media query for extra small devices - screen width less than 576px */
+
+
+    @media only screen and (max-width: 576px){
+    .wrapper{
+        height: 500px;
+    }
+    .wrapper .sidenav{
+        height: 500px;
+        width: 25%;
+    }
+    .wrapper .sidenav .profile{
+        height: 100px;
+        width: 100px;
+        margin-top: 100px;
+        margin-left: 20px;
+        border: 5px solid rgb(240, 133, 107);
+    }
+    .wrapper .sidenav ul{
+        font-size: 16px;
+        margin-left: -34px;
+
+    }
+    .wrapper .content{
+        width: 73%;
+        margin-left: 25%;
+    }
+    section{
+        height: 500px;
+        padding: 20px;
+    }
+    #section1 .page1{
+        margin-top: 80px;
+    }
+    #section1 h1{
+        font-size: 3em;
+    }
+    #section1 h2{
+        font-size: 13px;
+        margin-left: 2px;
+        margin-top: -17px;
+    }
+    section p {
+    font-size: 12px;
+    margin-top: 25px;
+    }
+    #section1 .socialmedia .col-sm-2{
+        width: 59px;
+    }
+    .fab{
+        font-size: 15px;
+        width: 40px;
+        margin: 17px 34px;
+    }
+    section h1{
+        font-size: 30px;
+    }
+    section h2{
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    section h3, section h4{
+        font-size: 14px;
+    }
+    #section2{
+        height: 900px;
+    }
+    #section2 .job{
+        height: 20%;
+    } 
+    #section2 h2, #section3 h2{
+        width: 50%;
+    }
+    #section2 span,#section3 span{
+        font-size: 12px;
+        width: 50%;
+    }
+    #section3 .page3, #section4 .page4{
+        margin-top: 45px;
+    }
+    #section3 .edu{
+        margin-top: 26px;
+    }
+    #section4 h2{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    #section4 .row{
+        width: 95%;
+        margin-top: 8px;
+    }
+    #section4 .col-sm-2{
+        width: 50px;
+    }
+    #section4 .col-sm-2 a{
+        font-size: 35px;
+    }
+    #section4 .fab, #section4 .fa-brands {
+        font-size: 20px;
+        margin: 9px 0px;
+        width: 35px;
+    }
+    #section4 .col-sm-2 img{
+        width: 20px;
+        height: 20px;
+        margin-top: 23px;
+    }
+    #section5 .page5{
+        margin-top: 100px;
+    }
+    #section5 .interests{
+        margin-top: 35px;
+    }
+    #section6 .page6{
+        margin-top: 73px;
+    }
+    #section6 p{
+        font-size: 7px;
+        margin-top: 13px;
+    }
+    #section6 .awards {
+        margin-top: 32px;
+    }
+    #section6 {
+        padding: 42px;
+    }
 }
 
-#section3{
-    margin-top: 80px;
-}
-#section3 .edu{
-    width: 100%;
-    height: 30%;
-    margin-top: 30px;
-}
+    /*media query for medium devices - screen width 576px - 768px  */
 
+    @media only screen and (max-width: 768px) and (min-width: 576px) {
+    .wrapper{
+        height: 600px;  
+    }
+    .wrapper .sidenav{
+        height: 600px;
+        width: 28%;
+    }
+    .wrapper .sidenav .profile{
+        height: 130px;
+        width: 130px;
+        border: 6px solid rgb(240, 133, 107);;
+        margin-top: 140px;
+        margin-left: 30px;
+    }
+    .wrapper .sidenav ul{
+        margin-top: 18px;
+        font-size: 14px;
+    }
+    .wrapper .sidenav a{
+        padding: 15px;
+    }
+    .wrapper .content{
+        margin-left: 28%;
+        width: 70%;
+    }
+    section{
+        height: 600px;
+        padding: 43px;
+    }
+    #section1 .page1{
+        margin-top: 100px;
+    }
+    #section1 h1{
+        font-size: 3.5em;
+    }
+    #section1 h2{
+        font-size: 14px;
+        margin-left: 4px;
+        margin-top: -18px;
+    }
+    section p {
+    font-size: 14px;
+    margin-top: 26px;
+    }
+    #section1 .intro{
+        margin-top: 35px;
+        margin-left: 7px;
+    }
+    #section1 .socialmedia .col-sm-2{
+        width: 50px;
+    }
+    .fab{
+        font-size: 20px;
+        width: 46px;
+        margin: 17px 34px;
+    }
+    section h1{
+        font-size: 38px;
+    }
+    section h2{
+        font-size: 25px;
+        margin-top: 35px;
+    }
+    section h3, section h4{
+        font-size: 16px;
+    }
+    #section2{
+        height: 1000px;
+    }
+    #section2 .job{
+        height: 24%;
+    } 
+    #section2 h2, #section3 h2{
+        width: 60%;
+    }
+    #section2 span,#section3 span{
+        font-size: 14px;
+        width: 40%;
+    }
+    #section3 .page3, #section4 .page4{
+        margin-top: 45px;
+    }
+    #section3 .edu{
+        height: 27%;
+        margin-top: 28px;
+    }
+    #section4 h2{
+        font-size: 18px;
+    }
+    #section4 .row{
+        width: 95%;
+        margin-top: 20px;
+    }
+    #section4 .col-sm-2{
+        width: 60px;
+    }
+    #section4 .col-sm-2 a{
+        font-size: 35px;
+    }
+    #section4 .fab, #section4 .fa-brands {
+        font-size: 25px;
+        margin: 19px 0px;
+        width: 35px;
+    }
+    #section4 .col-sm-2 img{
+        width: 25px;
+        height: 25px;
+        margin-top: 18px;
+    }
+    #section5 .page5{
+        margin-top: 100px;
+    }
+    #section5 .interests{
+        margin-top: 35px;
+    }
+    #section6 .page6{
+        margin-top: 130px;
+    }
+    #section6 p{
+        font-size: 11px;
+        margin-top: 13px;
+    }
+    #section6 {
+        padding: 42px;
+    }
+}
+    </style>
+</head>
 
-#section3 h1{
-    font-size: 50px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    color: rgb(77, 75, 75);
-}
-#section3 h2 span{
-    font-size: 16px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: right;
-    color: rgb(196, 104, 18);
-    width: 20%;
-}
-#section4{
-    margin-top: 20px;
-}
-#section4 h1{
-    font-size: 50px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    color: rgb(77, 75, 75);
-}
-
-#section5{
-    margin-top: 20px;
-}
-#section5 h1{
-    font-size: 50px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    color: rgb(77, 75, 75);
-}
-
-#section6{
-    margin-top: 20px;
-}
-#section6 h1{
-    font-size: 50px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    color: rgb(77, 75, 75);
-}
-
-
-
-</style>
 <body>
     <div class="wrapper">
         <div class="sidenav">
-            <img src="images/profi.jfif" alt="">
+            <img src="images/profi.jfif" class="profile" alt="">
             <ul>
                 <li>
                     <a href="#section1">ABOUT</a>
@@ -273,9 +546,10 @@ section p{
         </div>
         <div class="content">
             <section id="section1">
-                <h1>CLARENCE <span>TAYLOR</span></h1>
+                <div class="page1">
+                    <h1>CLARENCE <span>TAYLOR</span></h1>
                 <h2>3542 BERRY STREET &middot; CHEYENNE WELLS, CO 80810 &middot; (317) 585-8468 <span>&middot;NAME@EMAIL.COM</span></h2>
-                <P class="intro">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</P>
+                <P>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</P>
                 <div class="socialmedia">
                     <div class="row">
                         <div class="col-sm-2">
@@ -292,18 +566,20 @@ section p{
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
+            
+            
             <section id="section2">
                 <h1>EXPERIENCE</h1>
-
-
+                    
                 <div class="job">
                     <div class="main-heading">
                         <h2>SENIOR WEB DEVELOPER</h2>
                         <span>March 2013 - Present</span>
                     </div>
                     <h3>INTELITEC SOLUTIONS</h3>
-                <P>Bring to the table win-win survival statergies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</P>
+                    <P>Bring to the table win-win survival statergies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</P>
                 </div>
 
                 <div class="job">
@@ -336,37 +612,103 @@ section p{
             </section>
 
             <section id="section3">
-                <h1>EDUCATION</h1>
-                <div class="edu">
-                    <div class="main-heading">
-                        <h2>UNIVERSITY OF COLORADO BOULDER</h2>
-                        <span>August 2006 - May 2010</span>
+                <div class="page3">
+                    <h1>EDUCATION</h1>
+                    <div class="edu">
+                        <div class="main-heading">
+                            <h2>UNIVERSITY OF COLORADO BOULDER</h2>
+                            <span>August 2006 - May 2010</span>
+                        </div>
+                        <h4>BACHELOR OF SCIENCE</h4>
+                        <P>Computer Science - Web Development Track <br>GPA: 3.23</P>
                     </div>
-                    <h4>BACHELOR OF SCIENCE</h4>
-                    <P>Computer Science - Web Development Track <br>GPA: 3.23</P>
-                </div>
 
-                <div class="edu">
-                    <div class="main-heading">
-                        <h2>JAMES BUNCHANAN HIGH SCHOOL</h2>
-                        <span>September 2008 - June 2010</span>
+                    <div class="edu">
+                        <div class="main-heading">
+                            <h2>JAMES BUNCHANAN HIGH SCHOOL</h2>
+                            <span>September 2008 - June 2010</span>
+                        </div>
+                        <h4>TECHNOLOGY MAGNET PROGRAM</h4>
+                        <p>GPA: 3.56</p>
                     </div>
-                    <h4>TECHNOLOGY MAGNET PROGRAM</h4>
-                    <p>GPA: 3.56</p>
                 </div>
 
             </section>
 
 
             <section id="section4">
-                <h1>SKILLS</h1>
-
+                <div class="page4">
+                    <h1>SKILLS</h1>
+                    <div class="skill">
+                        <h2>PROGRAMMING LANGUAGES & TOOLS</h2>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fa-brands fa-html5" style="color: #aaa0a0;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fa-brands fa-css3-alt" style="color: #aaa0a0;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-js" style="color: #aaa0a0;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="images/jquery.png" alt="">
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fa-brands fa-sass" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fa-brands fa-less" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-bootstrap" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-wordpress-simple" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-grunt" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-gulp" style="color: #aaa9a9;"></i></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#"><i class="fab fa-npm" style="color: #aaa9a9;"></i></a>
+                            </div>
+                        </div>
+                        <h2>WORKFLOW</h2>
+                        <p>&check;&nbsp; Mobile-First, Responsive Design</p>
+                        <p>&check;&nbsp; Cross Browser Testing & Debugging</p>
+                        <p>&check;&nbsp; Cross Functional Teams</p>
+                        <p>&check;&nbsp; Agile Development & Scrum</p>
+                    </div>
+                </div>
             </section>
+           
+           
             <section id="section5">
-                <h1>INTERESTS</h1>
+                <div class="page5">
+                    <h1>INTERESTS</h1>
+                    <div class="interests">
+                        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+                        <p>When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+                    </div>
+                </div>
             </section>
+
             <section id="section6">
-                <h1>AWARDS</h1>
+                <div class="page6">
+                    <h1>AWARDS & CERTIFICATIONS</h1>
+                    <div class="awards">
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; Google Analytics Certified Developer</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; Mobile Web Specialist - Google Certification</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; 1<sup>st</sup> Place - University of Colorado Boulder - Emerging Tech Competition 2009</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; 1<sup>st</sup> Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; 2<sup>nd</sup> Place - University of Colorado Boulder - Emerging Tech Competition 2008</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp;    1<sup>st</sup> Place - James Buchanan High School - Hackathon 2006</p>
+                        <p><i class="fa fa-trophy" style="font-size:15px;color:rgb(241, 208, 21)"></i>&nbsp; 3<sup>rd</sup> Place - James Buchanan High School - Hackathon 2005</p>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
